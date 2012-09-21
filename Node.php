@@ -1,6 +1,6 @@
 <?php
 
-class RichUsernameEverywhere_Node extends XenForo_Model_Node
+class RichUsernameEverywhere_Node extends XFCP_RichUsernameEverywhere_Node
 {
 	/**
 	 * Gets all the node data required for a node list display

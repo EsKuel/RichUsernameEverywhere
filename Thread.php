@@ -1,6 +1,6 @@
 <?php
 
-class RichUsernameEverywhere_Thread extends XenForo_Model_Thread
+class RichUsernameEverywhere_Thread extends XFCP_RichUsernameEverywhere_Thread
 {
 	/**
 	 * Checks the 'join' key of the incoming array for the presence of the FETCH_x bitfields in this class
@@ -50,4 +50,3 @@ class RichUsernameEverywhere_Thread extends XenForo_Model_Thread
 		return $thread;
 	}
 }
-?>
