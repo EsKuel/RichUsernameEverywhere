@@ -34,4 +34,4 @@ If you also want to add rich username to thread author (under topic name), edit 
 
 ## Thanks
 
-Thanks to Jake Bunce, Waindigo and bubbl3 for their help.
+Thanks to Jake Bunce, Waindigo, bubbl3 and Luke Foreman for their help.
