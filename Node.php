@@ -19,16 +19,11 @@ class RichUsernameEverywhere_Node extends XFCP_RichUsernameEverywhere_Node
 	{
 		$nodeData = parent::getNodeDataForListDisplay($parentNode, $displayDepth, $nodePermissions);
 
-		if (!empty($nodeData))
+		if (!empty($nodeData['nodesGrouped']))
 		{			
-			$groupedNodes = $this->_addDisplayStyleGroupdId($nodeData['nodesGrouped']);
+			$nodeData['nodesGrouped'] = $this->_addDisplayStyleGroupdId($nodeData['nodesGrouped']);
 							
-			return array(
-					'nodesGrouped' => $groupedNodes,
-					'parentNodeId' => $nodeData['parentNodeId'],
-					'nodeHandlers' => $nodeData['nodeHandlers'],
-					'nodePermissions' => $nodeData['nodePermissions']
-			);
+			return $nodeData;
 		}
 		else
 		{
